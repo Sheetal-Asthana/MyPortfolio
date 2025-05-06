@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/249dfdb0ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Software Developer </p>
+                <h1> Hi, I'm <span>Sheetal</span><br> Asthana from India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pfpme.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Passionate about creating innovative language learning experiences, I design intuitive and engaging apps that make mastering a new language fun and effective. With a focus on user experience and smart learning techniques, I bring technology and education together seamlessly.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                           <!-- <li><span>UI/UX</span><br>Designing Web/App Interfaces</li> -->
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                   <!-------Experience-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>Android Developer Virtual Internship - 10 weeks (October to December 2024) <br><br> Gained hands-on experience in developing and maintaining Android applications using 
+                                Kotlin. Worked on various aspects of app development, including UI/UX design, coding, 
+                                testing, and debugging. </li>
+                           <!-- <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+                        </ul>
+                    </div>
+                    <!---Education-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Graduation</span><br>University - Galgotias University <br>Year of passing - 2023-2026 <br>CGPA - 9.8</li>
+                            <li><span>12th</span><br>School - Greenfields School <br>Board - ISC <br>Year of passing - 2023 <br>Percentage - 91.75%</li>
+                            <li><span>10th</span><br>School - Greenfields School <br>Board - ICSE <br>Year of passing - 2021 <br>Percentage - 98.8%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services-------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>    
+                    <h2>Web Design</h2>
+                    <p>I craft visually stunning and user-friendly websites that blend creativity with functionality. With a keen eye for design and a passion for seamless user experiences, I build responsive, modern websites that leave a lasting impression.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I design intuitive and engaging user experiences that bridge the gap between aesthetics and functionality. With a user-centric approach, I craft seamless interfaces that enhance usability, accessibility, and engagement across digital products.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I visually compelling apps that prioritize user experience and functionality. With a focus on seamless navigation and modern aesthetics, I create digital products that engage users and elevate their interaction with technology.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------portfolio----------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Quiz Application</h3>
+                        <p> An interactive and engaging quiz application designed to test knowledge, enhance learning, and entertain users. With a sleek interface, dynamic question formats, and real-time feedback, this app makes learning fun and rewarding.</p>
+                        <a href="mywork1.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p> The app connects you to the talented people around the world. Download it from Play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p> The app connects you to the talented people around the world. Download it from Play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------------------------------contact------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> asthanasheetal24@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sheetal-asthana-93514b294/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sheetal-Asthana"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzgLtWKkFuA_Tt70B2RVBXRbjbmV_sxLt51JZRCLxPbOd_CI1s_Dx9zLqJimJ68VzUR/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+             })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

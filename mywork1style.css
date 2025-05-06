@@ -1,0 +1,12 @@
+.img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+*{
+    background-color: black;
+}
+h1,h2,h3{
+    color: beige;
+}
